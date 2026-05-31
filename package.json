@@ -10,7 +10,7 @@
     "dev:main": "pnpm -F main-app dev",
     "dev:sub-react": "pnpm -F sub-react dev",
     "dev:sub-vue": "pnpm -F sub-vue dev",
-    "dev": "pnpm run --parallel dev:main dev:sub-react dev:sub-vue",
+    "dev": "pnpm --parallel -r run dev",
     "build": "pnpm -r run build",
     "build:main": "pnpm -F main-app build",
     "build:sub-react": "pnpm -F sub-react build",
